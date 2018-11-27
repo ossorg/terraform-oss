@@ -3,7 +3,7 @@ import PropTypes from 'proptypes';
 import {
   AppRegistry,
   StyleSheet,
-  VrButton, 
+  VrButton,
   NativeModules,
   Text,
   View,
@@ -110,7 +110,7 @@ export default class OpenSecureStorage extends Component {
     return (
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
-        <Text style={styles.centerText}>Habitable Systems Found</Text>
+        <Text style={styles.centerText}>Habitable System Found</Text>
           <Text style={styles.greeting}>
             <Text style={styles.centerText}>{this.addLeadingZeros(countDown.days)}</Text>
             <Text style={styles.centerText}>{countDown.days === 1 ? 'Day ' : 'Days '}</Text>
