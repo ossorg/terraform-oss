@@ -1,0 +1,8 @@
+rm -rf build/.git
+cp -r ./static_assets ./build/ &
+cd build && \
+git clone  git@github.com:opensecurestorage/opensecurestorage.github.io.git aaa && \
+mv aaa/.git .git && \
+rm -rf aaa && \
+git add -A . ;git commit -m new-commit;git push --follow-tags
+
